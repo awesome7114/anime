@@ -13,7 +13,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url('48c9a812eeeb85ce9f7b0e1f382b5972.jpg');
+    background-image: url('anime.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -28,6 +28,8 @@ nav{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    positon: absolute;
+    background: black;
 }
 
 .logo{
