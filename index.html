@@ -8,73 +8,64 @@
     <link rel="stylesheet" href="web_page.js">
  </head> 
  <body>
+<header id="header">
+   <div class="container">
+       <nav>
+           <ul>
+               <li><a href="#">Home</a></li>
+               <li><a href="#">About</a></li>
+               <li><a href="#">Services</a></li>
+               <li><a href="#">Projects</a></li>
+               <li><a href="#">Contact</a></li>
+           </ul>
+       </nav>
+   </div>
+</header>
 
-    <div id="header">
-        <div class="container">
-            <nav>
-                <img src="Awesome (1) - frame at 0m2s.png" class="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-
-    <!-- ---------------------------------------------------about------------------------------------------------ -->
-
-<div id="about">
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="TBATE 3.jpg">
-            </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">About us.</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
-                     eius recusandae. Ratione, optio beatae! Temporibus qui
-                      laborum consequuntur, eius, aliquam quo molestiae rerum 
-                      corporis pariatur nisi esse provident vitae, debitis facere odit
-                       dignissimos. Nostrum culpa illum eaque. Laboriosam modi,
-                        aperiam molestiae eum omnis dolore quis sunt eligendi similique,
-                         officiis quae atque.</p>
-
-                         <div class="tab-titles">
-                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                            <p class="tab-links" onclick="opentab('experience')">Exprience</p>
-                            <p class="tab-links" onclick="opentab('education')">Education</p>
-                         </div>
-                         <div class="tab-contents active-tab" id="skills">
-                            <ul>
-                                <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
-                                <li><span>Web Development</span><br>Web app Development</li>
-                                <li><span>App Development</span><br>Building Android/iOS app Interfaces</li>
-                            </ul>
-                         </div>
-                         <div class="tab-contents" id="experience">
-                            <ul>
-                                <li><span>2024 - current</span><br>Python and Back-End Coding at
-                                     Dominican College.</li>
-                                <li><span>2019 - 2024</span><br>Web Flow Editing at Google Tech.</li>
-                                <li><span>2017 - 2019</span><br>Coding Basics at Fl!p to Tech.</li>
-                            </ul>
-                         </div>
-                         <div class="tab-contents" id="education">
-                            <ul>
-                                <li><span>2020</span><br>Designing Web/App Interfaces at Fl!p to Tech.</li>
-                                <li><span>2019</span><br>Web app Development From FEASTAC.</li>
-                                <li><span>2018</span><br>Building scratch games in Lasu Tech.</li>
-                            </ul>
-                         </div>
-      
-            </div>
-        </div>
-    </div>
-</div>
-
+<main id="about">
+   <div class="container">
+       <div class="row">
+           <div class="about-col-1">
+               <img src="f84d6b8e96e0a3ad0d1e0419e336456e.jpg" alt="About Us Image">
+           </div>
+           <div class="about-col-2">
+               <h1 class="sub-title">About Us</h1>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+               <div class="tab-titles">
+                   <p class="tab-links active-link" onclick="opentab('Anime', event)">Anime</p>
+                   <p class="tab-links" onclick="opentab('Manga', event)">Manga</p>
+                   <p class="tab-links" onclick="opentab('Manhwa', event)">Manhwa</p>
+               </div>
+               <div class="tab-contents active-tab" id="Anime">
+                   
+                       <li id="cont-1">
+                           <button><a href="./"><img src="./EMS 5.jpg" alt="Emminece in Shadow">Emminece in Shadow</a></button>
+                       </li>
+                       <li id="cont-1">
+                        <button><a href="./"><img src="./JJK.jpg" alt="Jujustu Kasien">Jujustu Kasien</a></button>
+                       </li>
+                       <li id="cont-1">
+                        <button><a href="./"><img src="./TBATE 2.jpg" alt="The Begining After the End">TBATE</a></button>
+                       </li>
+                   
+               </div>
+               <div class="tab-contents" id="Manga">
+                   <ul>
+                       <h1><span>Manga Content</span></h1>
+                   </ul>
+               </div>
+               <div class="tab-contents" id="Manhwa">
+                   <ul>
+                       <li><span>2020</span><br>Designing Web/App Interfaces at Fl!p to Tech.</li>
+                       <li><span>2019</span><br>Web App Development From FEASTAC.</li>
+                       <li><span>2018</span><br>Building Scratch Games in Lasu Tech.</li>
+                   </ul>
+               </div>
+           </div>
+       </div>  
+   </div>
+</main>
+    
 <!-- ----------services------------ -->
 
 <div id="services">
